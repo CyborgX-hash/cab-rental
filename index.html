@@ -1,91 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cab Rental Service</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick Cab Rental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Quick Cab Rental Service</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container header-container">
+      <h1>Quick Cab Rental</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="rental-form">
-        <h2>Book a Cab</h2>
+  <main class="container">
+    <section id="rental-form" class="booking-section">
+        <h2><span class="icon"></span> Book Your Ride</h2>
         <form>
-            <label for="pickup-location">Pickup Location:</label>
-            <input type="text" id="pickup-location" required>
-
-            <label for="dropoff-location">Drop-off Location:</label>
-            <input type="text" id="dropoff-location" required>
-
-            <label for="date">Date:</label>
-            <input type="date" id="date" required>
-
-            <label for="time">Time:</label>
-            <input type="time" id="time" required>
-
-            <label for="car-selection">Select a Car:</label>
-            <select id="car-selection" required>
-                <option value="">--Cars we provide.--</option>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="pickup-location">Pickup Location</label>
+              <input type="text" id="pickup-location" placeholder="Enter pickup location" required>
+            </div>
+            <div class="form-group">
+              <label for="dropoff-location">Drop-off Location</label>
+              <input type="text" id="dropoff-location" placeholder="Enter drop-off location" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+              <label for="time">Time</label>
+              <input type="time" id="time" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="car-selection">Select a Car</label>
+              <select id="car-selection" required>
+                <option value="">-- Choose a car type --</option>
                 <option value="sedan">Sedan</option>
                 <option value="suv">SUV</option>
                 <option value="van">Van</option>
                 <option value="luxury">Luxury</option>
-            </select>
-
-            <button type="submit">Book Now</button>
+              </select>
+            </div>
+          </div>
+          <div class="form-btn-container">
+            <button type="submit"> Book Now</button>
+          </div>
         </form>
-    </section>
+      </section>
+      
 
     <section id="car-varieties">
-        <h2>Cars we provide</h2>
-        <div class="car-selection">
-            <div class="car">
-                <img src="maruti-dzire_360x240.avif" alt="Sedan">
-                <p>Sedan</p>
-            </div>
-            <div class="car">
-                <img src="seltos-exterior-right-front-three-quarter.webp" alt="SUV">
-                <p>SUV</p>
-            </div>
-            <div class="car">
-                <img src="urbania-luxury-van-rental-7.jpg" alt="Van">
-                <p>Van</p>
-            </div>
-            <div class="car">
-                <img src="1000_F_252371806_rV8L7d2tnTASRe0vIa02hQ3sPItNrgUY.jpg" alt="Luxury Car">
-                <p>Luxury</p>
-            </div>
+      <h2>Our Fleet</h2>
+      <div class="car-selection">
+        <div class="car card-hover">
+          <img src="maruti-dzire_360x240.avif" alt="Sedan">
+          <p>Sedan</p>
         </div>
+        <div class="car card-hover">
+          <img src="seltos-exterior-right-front-three-quarter.webp" alt="SUV">
+          <p>SUV</p>
+        </div>
+        <div class="car card-hover">
+          <img src="urbania-luxury-van-rental-7.jpg" alt="Van">
+          <p>Van</p>
+        </div>
+        <div class="car card-hover">
+          <img src="1000_F_252371806_rV8L7d2tnTASRe0vIa02hQ3sPItNrgUY.jpg" alt="Luxury">
+          <p>Luxury</p>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-        <h2>About Us</h2>
-        <p>We provide reliable and affordable cab services for all your transportation needs.</p>
+      <h2>Why Choose Quick Cab?</h2>
+      <div class="about-content">
+        <div>
+          <p>
+            At Quick Cab, we believe in delivering <strong>comfort, punctuality, and safety</strong> to every passenger.
+            With a wide fleet of cars and experienced drivers, we aim to make every journey stress-free and enjoyable.
+          </p>
+          <ul>
+            <li>24/7 Customer Support</li>
+            <li>Professional Chauffeurs</li>
+            <li>Clean & Sanitized Vehicles</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Airport Transfers</li>
-            <li>Long-Distance Rides</li>
-            <li>Hourly Rentals</li>
-        </ul>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Airport Transfers</li>
+        <li>Long-Distance Rides</li>
+        <li>Hourly Rentals</li>
+        <li>Corporate Travel</li>
+      </ul>
     </section>
+  </main>
 
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@quickcabrental.com</p>
-        <p>Phone: +1 (234) 567-890</p>
-    </footer>
+  <footer id="contact">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>Quick Cab Rental</h2>
+        <p>Your ride, on time, every time.</p>
+      </div>
+      <div class="footer-right">
+        <p><strong>Email:</strong> info@quickcabrental.com</p>
+        <p><strong>Phone:</strong> +1 (234) 567-890</p>
+        <p>&copy; 2025 Quick Cab Rental. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
